@@ -102,10 +102,10 @@ export function Home() {
           <p>Seu horário foi registrado com sucesso.</p>
 
           <div className="summary">
-            <span><strong>Cliente:</strong> {name}</span>
-            <span><strong>Serviço:</strong> {selectedService}</span>
-            <span><strong>Data:</strong> {selectedDate}</span>
-            <span><strong>Horário:</strong> {selectedTime}</span>
+            <span><strong>Cliente:</strong> {name} </span>
+            <span><strong>Serviço:</strong> {selectedService} </span>
+            <span><strong>Data:</strong> {selectedDate} </span>
+            <span><strong>Horário:</strong> {selectedTime} </span>
           </div>
 
           <a
