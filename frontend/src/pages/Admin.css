@@ -1,0 +1,151 @@
+.admin-page {
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(180deg, #fff1f7, #ffffff);
+  color: #2d1b24;
+}
+
+.admin-header {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+}
+
+.admin-header h1 {
+  margin: 12px 0 8px;
+  font-size: 32px;
+}
+
+.admin-header p {
+  color: #6b4b5a;
+}
+
+.admin-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.calendar-card,
+.day-card {
+  padding: 24px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 20px 50px rgba(120, 40, 80, 0.12);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-header h2 {
+  text-transform: capitalize;
+}
+
+.week-grid,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.week-grid {
+  margin: 20px 0 8px;
+  text-align: center;
+  color: #6b4b5a;
+}
+
+.calendar-day {
+  min-height: 74px;
+  display: grid;
+  gap: 6px;
+  align-content: center;
+  background: #f7edf2;
+}
+
+.calendar-day small {
+  font-size: 11px;
+  color: #6b4b5a;
+}
+
+.active-day {
+  background: #d63384;
+  color: white;
+}
+
+.active-day small {
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .admin-content {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+.dashboard-grid {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.dashboard-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 14px 35px rgba(120, 40, 80, 0.1);
+}
+
+.dashboard-card span {
+  display: block;
+  color: #6b4b5a;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card strong {
+  font-size: 28px;
+  color: #d63384;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-page {
+    padding: 16px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-card,
+  .day-card {
+    padding: 16px;
+  }
+
+  .calendar-day {
+    min-height: 58px;
+    padding: 8px 4px;
+    font-size: 13px;
+  }
+
+  .calendar-day small {
+    font-size: 9px;
+  }
+
+  .calendar-header h2 {
+    font-size: 18px;
+  }
+}

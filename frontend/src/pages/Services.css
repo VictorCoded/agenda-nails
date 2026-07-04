@@ -1,0 +1,59 @@
+.services-page {
+  max-width: 900px;
+}
+
+.services-page h1 {
+  margin-bottom: 8px;
+}
+
+.services-page p {
+  color: #6b4b5a;
+  margin-bottom: 24px;
+}
+
+.service-form {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 14px 35px rgba(120, 40, 80, 0.1);
+  margin-bottom: 24px;
+}
+
+.service-list {
+  display: grid;
+  gap: 12px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 18px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(120, 40, 80, 0.08);
+}
+
+.service-item div {
+  display: grid;
+  gap: 4px;
+}
+
+.service-item span {
+  color: #6b4b5a;
+}
+
+.service-item button {
+  background: #dc3545;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .service-item {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
